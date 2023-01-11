@@ -1,0 +1,30 @@
+#! /bin/bash
+
+echo "Criando Diretórios..."
+
+mkdir /publico
+mkdir /adm
+mkdir /ven
+mkdir /sec
+
+echo "Diretórios criados com sucesso!!!""
+
+echo "Criando Grupos de usuários..."
+
+groupadd GRP_ADM
+groupadd GRP_VEN
+groupadd GRP_SEC
+
+echo "Grupos criados com sucesso!!!"
+
+echo "Criando Usuários..."
+
+useradd carlos -m -s /bin/bash -p $(openssl passwd -crypt Senha123)
+useradd maria
+useradd joao_
+useradd debora
+useradd sebastiana
+useradd roberto
+useradd josefina
+useradd amanda
+useradd rogerio
